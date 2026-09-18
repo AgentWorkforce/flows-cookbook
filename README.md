@@ -14,7 +14,12 @@ npm install --save-dev @relayflows/surface
 ## Getting started
 
 - **[cloud-gates](cloud-gates/)** — the smallest possible flow: one step, one gate, proves your setup works before you build on top of it.
+
+  [![Deploy Flow](https://agentrelay.com/deploy-flow_small.svg)](https://agentrelay.com/cloud/flows/deploy?flow=https%3A%2F%2Fgithub.com%2FAgentWorkforce%2Fflows-cookbook%2Fblob%2Fmain%2Fcloud-gates%2Fcloud-gates.flow.yaml)
+
 - **[prospect-demo](prospect-demo/)** — generate a message with an LLM, post it to Slack. The smallest flow that touches the outside world.
+
+  [![Deploy Flow](https://agentrelay.com/deploy-flow_small.svg)](https://agentrelay.com/cloud/flows/deploy?flow=https%3A%2F%2Fgithub.com%2FAgentWorkforce%2Fflows-cookbook%2Fblob%2Fmain%2Fprospect-demo%2Fdemo.flow.ts)
 
 ## Automations
 
@@ -26,6 +31,8 @@ npm install --save-dev @relayflows/surface
     --input '{"repo":"acme/api","channel":"#eng","staleDays":14}'
   ```
 
+  [![Deploy Flow](https://agentrelay.com/deploy-flow_small.svg)](https://agentrelay.com/cloud/flows/deploy?flow=https%3A%2F%2Fgithub.com%2FAgentWorkforce%2Fflows-cookbook%2Fblob%2Fmain%2Fstale-issues%2Fstale-issues.flow.ts)
+
 - **[stale-prs](stale-prs/)** — same shape, for pull requests: ready-to-merge, needs-review, needs-author, or abandoned — because staleness is about whose turn it is, not just how long it's been quiet.
 
   ```bash
@@ -34,9 +41,13 @@ npm install --save-dev @relayflows/surface
     --input '{"repo":"acme/api","channel":"#eng","staleDays":14}'
   ```
 
+  [![Deploy Flow](https://agentrelay.com/deploy-flow_small.svg)](https://agentrelay.com/cloud/flows/deploy?flow=https%3A%2F%2Fgithub.com%2FAgentWorkforce%2Fflows-cookbook%2Fblob%2Fmain%2Fstale-prs%2Fstale-prs.flow.ts)
+
 ## Review
 
 - **[pr-reviewer](pr-reviewer/)** — reads a PR, fixes what's mechanical, and only says "ready for a human" when the agent, the tests, and GitHub all agree. The test result is never the agent's own word for it.
+
+  [![Deploy Flow](https://agentrelay.com/deploy-flow_small.svg)](https://agentrelay.com/cloud/flows/deploy?flow=https%3A%2F%2Fgithub.com%2FAgentWorkforce%2Fflows-cookbook%2Fblob%2Fmain%2Fpr-reviewer%2Fpr-reviewer.flow.ts)
 
 ## Software Factory
 
