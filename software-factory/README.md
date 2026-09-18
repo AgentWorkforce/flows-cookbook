@@ -7,7 +7,7 @@ flows deploy software-factory.flow.ts \
   --repo acme/api --on linear:team=ENG --approver you
 ```
 
-[![Deploy Flow](https://agentrelay.com/launch-agent_small.svg)](https://agentrelay.com/cloud/flows/deploy?flow=https%3A%2F%2Fgithub.com%2FAgentWorkforce%2Fflows-cookbook%2Fblob%2Fmain%2Fsoftware-factory%2Fsoftware-factory.flow.ts&on=linear%3Ateam%3DENG)
+[![Deploy Flow](https://agentrelay.com/deploy-flow_small.svg)](https://agentrelay.com/cloud/flows/deploy?flow=https%3A%2F%2Fgithub.com%2FAgentWorkforce%2Fflows-cookbook%2Fblob%2Fmain%2Fsoftware-factory%2Fsoftware-factory.flow.ts&on=linear%3Ateam%3DENG)
 
 `--on` also takes `github:labels=agent`, `jira:project=OPS`, `shortcut:workspace=…` or `slack:channel=#eng`. Each matching ticket launches one Cloud run in a fresh `relayflow/software-factory-<id>` branch of `--repo`; a passing review opens a PR, a blocked one opens a draft PR carrying the findings and ends `step_failed` instead of pretending nothing went wrong.
 

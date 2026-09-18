@@ -2,7 +2,7 @@
 
 **We cook. Everybody eats.**
 
-Stop babysitting agents. Script them. Every recipe here is a single `.flow.ts` (or `.flow.yaml`) file — copy it, point it at your repo, run it locally or deploy it to [Agent Relay Cloud](https://agentrelay.com/cloud) where it listens for tickets, PRs, or a schedule and every run is observable and replayable.
+Stop babysitting agents. Script them. Every recipe here is a single `.flow.ts` (or `.flow.yaml`) file — copy it, point it at your repo, run it locally or deploy it on our infrastructure at [agentrelay.com/flows](https://agentrelay.com/flows), where it listens for tickets, PRs, or a schedule and every run is observable and replayable.
 
 Built on [relay(Flows)](https://github.com/AgentWorkforce/flows). Install:
 
@@ -47,7 +47,7 @@ npm install --save-dev @relayflows/surface
     --repo acme/api --on linear:team=ENG --approver you
   ```
 
-  [![Deploy Flow](https://agentrelay.com/launch-agent_small.svg)](https://agentrelay.com/cloud/flows/deploy?flow=https%3A%2F%2Fgithub.com%2FAgentWorkforce%2Fflows-cookbook%2Fblob%2Fmain%2Fsoftware-factory%2Fsoftware-factory.flow.ts&on=linear%3Ateam%3DENG)
+  [![Deploy Flow](https://agentrelay.com/deploy-flow_small.svg)](https://agentrelay.com/cloud/flows/deploy?flow=https%3A%2F%2Fgithub.com%2FAgentWorkforce%2Fflows-cookbook%2Fblob%2Fmain%2Fsoftware-factory%2Fsoftware-factory.flow.ts&on=linear%3Ateam%3DENG)
 
 `--on` takes `github`, `linear`, `jira`, `shortcut` or `slack` with optional filters (`github:labels=agent`, `jira:project=OPS`, `slack:channel=#eng`). `flows deployments` lists what's listening; `flows undeploy <id>` stops it. Sign in once with `agent-relay cloud login`.
 
